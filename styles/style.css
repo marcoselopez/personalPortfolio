@@ -152,3 +152,6 @@
   border-radius: 50%;
   border: 15px solid var(--azul);
 }
+p{
+  color: var(--morado);
+}
