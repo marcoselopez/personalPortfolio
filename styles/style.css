@@ -17,6 +17,12 @@
   background-color: var(--blue);
   margin-bottom: 10px;
 }
+#separatorLineBlue2{
+  height: 1px;
+  width: 7%;
+  background-color: var(--blue);
+  margin-bottom: -2px;
+}
 .progress{
   height: 10px;
   width: 100%;
@@ -324,5 +330,4 @@ h3{
 #softSkillTitle{
   margin-top: 20px;
   color: var(--blue);
-  border-bottom: 1px solid var(--blue);
 }
