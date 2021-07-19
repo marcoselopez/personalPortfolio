@@ -33,6 +33,7 @@
 }
 a{
   text-decoration: none;
+  z-index: 2;
 }
 
 /* ANCHOR HERO CONTENT */
@@ -74,6 +75,26 @@ a{
   z-index: 2;
   color: var(--yellow); 
   font-size: 1.5rem;
+}
+#heroArrow{
+  margin-top: 1rem;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid var(--yellow);
+  z-index: 2;
+  transition-duration: .3s;
+}
+#heroArrow:hover{
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 60px solid var(--yellow);
+  z-index: 2;
+  transition-duration: .3s;
 }
 
 /* ANCHOR HEADER CONTENT */
@@ -267,14 +288,41 @@ h3{
 
 /* ANCHOR SOFT SKILLS CONTENT */
 #softSkillsContainer{
-  height: 400px;
+  height: 300px;
   background-color: var(--yellow);
 }
 #softSkillBox{
-  height: 65%;
-  width: 20%;
+  height: 70%;
+  width: 16%;
   background-color: white;
-  margin-right: 1rem;
+  margin-right: 3rem;
   box-shadow: 0 0 29px 0 rgb(68 88 144 / 20%);
   border-radius: 5px;
+  color: var(--blue);
+  transition-duration: .5s;
+}
+#softSkillBox:hover{
+  background-color: var(--blue);
+  transition-duration: .5s;
+  color: var(--yellow);
+}
+#softSkillIcon{
+  margin-top: 1rem;
+  border-bottom: 1px solid;
+}
+#softSkillText{
+  margin-top: 1rem;
+  font-size: .7rem;
+  width: 80%;
+  line-height: 1.2rem;
+  font-weight: lighter;
+}
+#softSkillsTitleContainer{
+  background-color: var(--yellow);
+  height: 65px;
+}
+#softSkillTitle{
+  margin-top: 20px;
+  color: var(--blue);
+  border-bottom: 1px solid var(--blue);
 }
