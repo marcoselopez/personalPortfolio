@@ -13,6 +13,11 @@
 /* ANCHOR COMMON THINGS */
 #separatorBlue{
   border-bottom: 1px solid var(--blue);
+  width: 100%;
+}
+#separatorYellow{
+  border-bottom: 1px solid var(--yellow);
+  width: 100%;
 }
 .progress{
   height: 10px;
@@ -183,8 +188,8 @@ a:visited{
 
 /* ANCHOR "ABOUT ME" CONTENT */
 #aboutMeContainer{
-  height: 600px;
   background-color: white;
+  margin: 50px 0;
 }
 #aboutMe{
  height: 80%;
@@ -196,16 +201,6 @@ a:visited{
   color: var(--blue);
   /* outline: 1px solid red; */
 }
-@media (max-width: 735px){
-  #aboutMeContainer{
-    height: 900px;
-  }
-  #aboutMeCol2{
-    margin-left: 0px;
-    margin-top: 2rem;
-    text-align: center;
-  }
-}
 #aboutMePic{
   width: 100%;
   border-radius: 50%;
@@ -214,16 +209,33 @@ a:visited{
 }
 p{
   color: var(--purple);
+  margin-top: 10px;
 }
+@media (max-width: 1024px){
+  #aboutMeCol2{
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  #aboutMePic{
+    width: 80%;
+  }
+}
+
 /* ANCHOR NEW RESUME CONTENT */
 #resumeContainer{
   margin: 15px 0;
   background-color: var(--yellow);
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #resumeTitleBox{
-  margin: 10px 0;
-  color: var(--blue);
+  padding-top: 10px;
+  color: var(--yellow);
+  background-color: var(--blue);
+  margin-bottom: 10px;
 }
 #resumeRow1{
   margin: 10px 0;
@@ -251,8 +263,9 @@ p{
   width: 100%;
 }
 .resumeLabel{
-font-weight: lighter;
-color: var(--blue);
+  font-weight: lighter;
+  color: var(--blue);
+  text-align: center;
 }
 .resumeSmallLabel{
   font-weight: lighter;
@@ -269,6 +282,27 @@ color: var(--blue);
 }
 .resumeLI{
   margin-bottom: 10px;
+}
+@media (min-width: 1024px){
+  #resumeBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .resumeUL{
+    text-align: left;
+    list-style-type: square;
+    padding-left: 15px;
+  }
+  .resumeTitle{
+    width: 100%;
+  }
+  #resumeContainer{
+    align-items: flex-start;
+  }
+  #resumeRow1{
+    margin: 0;
+  }
 }
 
 /* ANCHOR "HARD SKILLS" CONTENT */
