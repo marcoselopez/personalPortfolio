@@ -217,7 +217,7 @@ p{
 }
 /* ANCHOR NEW RESUME CONTENT */
 #resumeContainer{
-  margin: 0 15px;
+  margin: 15px 0;
   background-color: var(--yellow);
   width: 100vw;
 }
