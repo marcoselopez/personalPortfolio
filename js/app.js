@@ -18,6 +18,7 @@ function toggleMenu(){
     items.forEach(item => item.classList.add("active"));
     toggle.querySelector("div").innerHTML = "<span class='material-icons'>close</span>"
   }
+  
 }
 
 toggle.addEventListener('click', toggleMenu, false);
