@@ -48,6 +48,9 @@ a{
   text-decoration: none;
   z-index: 2;
 }
+a:visited{
+  color: var(--yellow);
+}
 
 /* ANCHOR HERO CONTENT */
 #hero{
@@ -121,31 +124,37 @@ a{
 }
 
 /* ANCHOR HEADER CONTENT */
-#header{
-  height: 50px;
-  width: 100%;
+.menu{
   background-color: var(--blue);
-  box-shadow: 0px 2px 10px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
-  top: 0;
-  z-index: 2;
+  top: 0px;
 }
-#allHeaderItems{
-  padding-left: 2rem;
-  padding-right: 2rem;
+.logo{
+  font-size: 30px;
+}
+.logo, .navItem, .navToggle{
   color: var(--yellow);
-  transition-duration: .3s;
-  height: 30px;
-  font-weight: bolder;
+  padding: 10px 20px;
+}
+.navToggle{
+  order: 1;
+}
+.navItem{
+  order: 2;
+  width: 100%;
+  text-align: center;
   position: relative;
-  border-right: 1px solid var(--yellow);
-}
-#allHeaderItems:hover{
-  height: 50px;
-  color: var(--blue);
   cursor: pointer;
+  display: none;
 }
-#allHeaderItems::before{
+.navItem:hover{
+  color: var(--blue);
+}
+.navItem::before{
   content: "";
   transition-duration: .5s;
   position: absolute;
@@ -153,49 +162,39 @@ a{
   left: 50%;
   right: 50%;
   bottom: 0;
-  opacity: 0;
   background-color: var(--yellow);
+  opacity: 0;
 }
-#allHeaderItems:hover::before{
+.navItem:hover::before{
   transition-duration: .5s;
   left: 0;
   right: 0;
   opacity: 1;
   z-index: -1;
 }
-#lastHeaderItem{
-  margin-right: 6rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  color: var(--yellow);
-  transition-duration: .3s;
-  height: 30px;
-  font-weight: bolder;
-  position: relative;
-  border-right: 1px solid var(--yellow);
+.active{
+  display: block;
 }
-#lastHeaderItem:hover{
-  height: 50px;
-  color: var(--blue);
-  cursor: pointer;
+@media (min-width: 1024px){
+  .navItem{
+    width: auto;
+    display: block;
+  }
+  .navToggle{
+    display: none;
+  }
+  .menu{
+    justify-content: flex-end;
+  }
+  .logo{
+    border-right: 1px solid var(--yellow);
+    margin-right: 10px;
+  }
 }
-#lastHeaderItem::before{
-  content: "";
-  transition-duration: .5s;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  background-color: var(--yellow);
-}
-#lastHeaderItem:hover::before{
-  transition-duration: .5s;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  z-index: -1;
+@media (min-width: 768px){
+  .navItem{
+    text-align: right;
+  }
 }
 
 /* ANCHOR "ABOUT ME" CONTENT */
