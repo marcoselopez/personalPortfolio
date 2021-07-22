@@ -11,24 +11,8 @@
 }
 
 /* ANCHOR COMMON THINGS */
-#separatorLineBlue{
-  height: 1px;
-  width: 20%;
-  background-color: var(--blue);
-  margin-bottom: 10px;
-}
-#separatorLineBlue2{
-  height: 1px;
-  width: 7%;
-  background-color: var(--blue);
-  margin-bottom: -2px;
-}
-#separatorLineBlue3{
-  height: 1px;
-  width: 20%;
-  background-color: var(--yellow);
-  margin-bottom: 10px;
-  margin-top: -5px;
+#separatorBlue{
+  border-bottom: 1px solid var(--blue);
 }
 .progress{
   height: 10px;
@@ -206,9 +190,6 @@ a:visited{
  height: 80%;
  width: 80%;
 }
-/* #aboutMeCol1{
- outline: 1px solid blue;
-} */
 #aboutMeCol2{
   height: 400px;
   margin-left: 2rem;
@@ -234,68 +215,59 @@ a:visited{
 p{
   color: var(--purple);
 }
-
-/* ANCHOR MY RESUME CONTENT */
-#myResumeContainer{
-  height: 700px;
+/* ANCHOR NEW RESUME CONTENT */
+#resumeContainer{
+  margin: 0 15px;
   background-color: var(--yellow);
 }
-#myResume{
-  height: 90%;
-  width: 90%;
-}
-#myResumeCol1{
-  height: 100%;
+#resumeTitleBox{
+  margin: 10px 0;
   color: var(--blue);
 }
-#myResumeCol1Row{
-  height: 100%;
-  width: 100%;
+#resumeRow1{
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#col1row1{
-  height: 23%;
-  border-left: 1px solid var(--purple);
+#resumeRow2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#col2row1{
-  height: 70%;
-  border-left: 1px solid var(--purple);
+#resumeBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
-li{
-  margin-bottom: .2rem;
-  font-size: .65rem;
-  color: var(--purple);
-}
-li::marker{
-  unicode-bidi: isolate;
-  font-variant-numeric: tabular-nums;
-  text-transform: none;
-  text-indent: 0px !important;
-  text-align: start !important;
-  text-align-last: start !important;
-}
-ul{
-  margin-top: 1rem;
-}
-#myResumeCol2{
-  height: 98%;
-  color: var(--blue);
-  border-left: 1px solid var(--purple);
-}
-#jobLabel{
-  font-size: .7rem;
-}
-#myResumeCol3{
-  height: 25%;
-  color: var(--blue);
-  border-left: 1px solid var(--purple);
-  outline: 1px solid green;
-}
-h3{
+.resumeTitle{
   color: var(--yellow);
   background-color: var(--blue);
   border-radius: 2px;
   text-align: center;
-  width: 300px;
+  width: 100%;
+}
+.resumeLabel{
+font-weight: lighter;
+color: var(--blue);
+}
+.resumeSmallLabel{
+  font-weight: lighter;
+  color: var(--blue);
+  font-size: 12px;
+}
+.resumeUL{
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--purple);
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+.resumeLI{
+  margin-bottom: 10px;
 }
 
 /* ANCHOR "HARD SKILLS" CONTENT */
