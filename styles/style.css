@@ -219,6 +219,7 @@ p{
 #resumeContainer{
   margin: 0 15px;
   background-color: var(--yellow);
+  width: 96vw;
 }
 #resumeTitleBox{
   margin: 10px 0;
