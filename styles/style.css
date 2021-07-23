@@ -307,23 +307,35 @@ p{
 
 /* ANCHOR "HARD SKILLS" CONTENT */
 #hSkillsContainer{
-  height: 600px;
+  margin: 50px 0;
   background-color: white;
 }
-#hSkills{
-  height: 80%;
-  width: 80%;
+#hSkillsTitleBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  color: var(--yellow);
+  background-color: var(--blue);
+  align-content: center;
 }
 #hSkillsCol1{
-  height: 400px;
   color: var(--blue);
   /* outline: 1px solid blue; */
 }
 #hSkillsCol2{
-  height: 400px;
   color: var(--blue);
   /* outline: 1px solid red; */
   margin-left: 1rem;
+}
+@media (max-width: 992px){
+  #hSkillsCol2{
+    margin: 0;
+  }
+  #hSkillsCol1{
+    margin-bottom: 20px;
+  }
 }
 
 /* ANCHOR SOFT SKILLS CONTENT */
